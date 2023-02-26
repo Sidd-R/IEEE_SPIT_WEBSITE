@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "./Events.css";
-import { events } from "./Event_description";
+import '../styles/Events.css'
+import { events } from "../components/Event_description";
 
 function Events() {
   const [currentIndex, setCurrentIndex] = useState(0);
