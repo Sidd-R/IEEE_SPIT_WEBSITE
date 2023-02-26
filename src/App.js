@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { Events } from "./Pages/Events";
+import  Events from "./Pages/Events/Events"
 import { Home } from "./Pages/Home";
 import { Team } from "./Pages/Team";
 
