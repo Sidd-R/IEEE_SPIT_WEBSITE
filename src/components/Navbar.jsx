@@ -14,7 +14,7 @@ function ColorSchemesExample() {
                     <Navbar.Brand href="#home" className="main-name">IEEE SPIT</Navbar.Brand>
                     <Nav className="Navbar">
                         <Nav.Link href="#home"><FontAwesomeIcon icon={faHome} />Home</Nav.Link>
-                        <Nav.Link href="#features"><FontAwesomeIcon icon={faCode} />Events</Nav.Link>
+                        <Nav.Link href="/events"><FontAwesomeIcon icon={faCode} />Events</Nav.Link>
                         <Nav.Link href="#pricing"><FontAwesomeIcon icon={faUserSecret} />Team</Nav.Link>
                         <Nav.Link href="#pricing"><FontAwesomeIcon icon={faCircleInfo} />About us</Nav.Link>
 
