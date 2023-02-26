@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faLinkedinIn, faGithub, faMedium, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import '../styles/footer.css'
 const Footer = () => {
+
     return (
         <div>
             <section className="contact-area" id="contact">
