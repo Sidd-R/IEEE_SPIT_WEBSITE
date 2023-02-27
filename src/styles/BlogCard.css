@@ -6,7 +6,7 @@ body {
 }
 
 h1,
-h2 {
+.date {
     margin: 0;
     font-family: Montserrat, sans-serif;
     text-align: left;
@@ -15,7 +15,7 @@ h2 {
 h2 {
     color: #9E9E9E;
     font-style: italic;
-    font-size: 15px;
+    font-size: 5px;
 }
 
 .card {
