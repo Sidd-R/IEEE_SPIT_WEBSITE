@@ -10,6 +10,7 @@ export const Home = () => {
           title={blog.title}
           date={blog.date}
           content={blog.content}
+          link={blog.link}
 
         />
       )
