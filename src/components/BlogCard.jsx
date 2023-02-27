@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/BlogCard.css"
 
 export default function BlogCard(props) {
+
     return (
         <div className="card">
             <div >
@@ -9,7 +10,7 @@ export default function BlogCard(props) {
             </div>
             <div className="card__copy">
                 <h1>{props.title}</h1>
-                <h2>{props.date}</h2>
+                <h2 className="date">{props.date}</h2>
                 <p>
                     {props.content}
                 </p>
