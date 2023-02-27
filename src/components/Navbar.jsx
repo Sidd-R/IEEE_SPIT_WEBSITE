@@ -17,7 +17,6 @@ function ColorSchemesExample() {
                         <Nav.Link href="/events"><FontAwesomeIcon icon={faCode} />Events</Nav.Link>
                         <Nav.Link href="#pricing"><FontAwesomeIcon icon={faUserSecret} />Team</Nav.Link>
                         <Nav.Link href="#pricing"><FontAwesomeIcon icon={faCircleInfo} />About us</Nav.Link>
-
                     </Nav>
                 </Container>
             </Navbar>
