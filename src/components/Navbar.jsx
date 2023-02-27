@@ -10,7 +10,7 @@ function ColorSchemesExample() {
             <Navbar bg="dark" variant="dark">
 
                 <Container>
-                    <img src={require("../images/ieee_logo.png")} alt="logo" />
+                    <img src={require("../images/ieee_logo.png")} alt="logo" className='logo' />
                     <Navbar.Brand href="/" className="main-name">IEEE SPIT</Navbar.Brand>
                     <Nav className="Navbar">
                         <Nav.Link href="/"><FontAwesomeIcon icon={faHome} />Home</Nav.Link>
