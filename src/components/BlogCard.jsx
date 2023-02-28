@@ -13,7 +13,7 @@ export default function BlogCard(props) {
                     <h1>{props.title}</h1>
                     <h2 className="date">{props.date}</h2>
                     <p>
-                        {props.content}
+                        {props.content.substring(0, 180)}...<a href={props.link} target="_blank">Read more</a>
                     </p>
                 </div>
             </div>
