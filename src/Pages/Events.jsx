@@ -23,9 +23,9 @@ function Events() {
         <div
           key={index}
           className={currentIndex === index ? "active" : ""}
-          style={{ backgroundImage: `url(${event.image})` }}
+          style={{ backgroundImage: `url(${event.image})`, margin: "0" }}
         >
-          <section className="content">
+          <section className="event_content">
             <h2>
               {event.name}
             </h2>

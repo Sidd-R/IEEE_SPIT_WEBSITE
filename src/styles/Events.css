@@ -26,7 +26,7 @@
   opacity: 1;
 }
 
-.content{
+.event_content{
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -37,17 +37,20 @@
     
 }
 
-.content p {
+.event_content p {
   margin: 0;
   height: 100px;
   width: 600px;
   background-color: rgba(187, 227, 240, 0.404);
+  text-align: left;
 }
 
-.content h2 {
+.event_content h2 {
+  margin: 0;
   width: 600px;
   text-align: center;
   background-color: rgba(187, 227, 240, 0.404);
+  color: black;
 }
 
 .prev-btn,
