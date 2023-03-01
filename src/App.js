@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import  Events from "./Pages/Events"
+import Events from "./Pages/Events"
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar"
 // import { Events } from "./Pages/Events";
@@ -16,6 +16,7 @@ function App() {
         <Route path="/events" element={<Events />} />
         <Route path="/team" element={<Team />} />
       </Routes>
+
       <Footer />
     </div>
   );
