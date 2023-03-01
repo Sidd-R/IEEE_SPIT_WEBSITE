@@ -100,5 +100,7 @@ p.mbr-text {
 }
 
 .col-md-3 {
-  margin: 20px;
+  margin: 25px;
+  max-width: 21%;
+
 }
