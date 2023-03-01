@@ -74,8 +74,8 @@ const Footer = () => {
             </section>
             {/* <!-- =============== 1.9 Contact Area End ====================--> */}
             {/* <!-- =============== 1.9 Footer Area Start ====================--> */}
-            <footer>
-                <p>Copyright &copy; 2023 <img src={require("../images/ieee_logo.png")} alt="logo" /> All Rights Reserved.</p>
+            <footer style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
+                <p>Copyright &copy; 2023 <img src={require("../images/ieee_logo.png")} alt="logo" style={{ marginLeft: "45px"}}/> All Rights Reserved.</p>
             </footer>
         </div>
     );
