@@ -8,7 +8,7 @@ const Footer = () => {
             <section className="contact-area" id="contact">
                 <div className="container">
                     <div className="flex flex-wrap sm:space-x-6 sm:justify-evenly mx-14 flex-col sm:flex-row ">
-                        <div className=''>
+                        <div className='mx-5'>
                             <p className='mbr-text'>
                                 <strong>Address</strong>
                                 <br />
@@ -24,24 +24,24 @@ const Footer = () => {
                                 <br />
                                 <p>
                                     Email : <a href='mailto: ieee@spit.ac.in'> ieee@spit.ac.in</a><br />
-                                    Phone:  <a href='tel:8291403220'>82914 03220</a>  
+                                    Phone:  <a href='tel:8291403220'>82914 03220</a>
                                 </p>
                             </p>
                         </div>
 
-                        {/* <div className='mx-5 '>
+                        <div className='mx-5 '>
                             <p className='mbr-text'>
                                 <strong>Feedback</strong>
                                 <br />
                                 <br />
-                                <p>Please send us your ideas,</p> 
+                                <p>Please send us your ideas,</p>
                                 <p>bug, reports, suggestions!.</p>
                                 <p> Any feedback would be appreciated</p>
                             </p>
-                        </div> */}
+                        </div>
 
                         <div className='        ' id='map'>
-                                <iframe className=' aspect-square sm:h-96 sm:w-96 rounded-md mt-8 h-60' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.6460492262745!2d72.83392671547509!3d19.123177587060866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9d90e067ba9%3A0x16268e5d6bca2e6a!2sBharatiya%20Vidya%20Bhavan&#39;s%20Sardar%20Patel%20Institute%20of%20Technology%20(SPIT)!5e0!3m2!1sen!2sin!4v1677661519553!5m2!1sen!2sin"  style={{ border: "0" }}  loading="lazy" title='gmap'></iframe>
+                            <iframe className=' aspect-square sm:h-96 sm:w-96 rounded-md mt-8 h-60' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.6460492262745!2d72.83392671547509!3d19.123177587060866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9d90e067ba9%3A0x16268e5d6bca2e6a!2sBharatiya%20Vidya%20Bhavan&#39;s%20Sardar%20Patel%20Institute%20of%20Technology%20(SPIT)!5e0!3m2!1sen!2sin!4v1677661519553!5m2!1sen!2sin" style={{ border: "0" }} loading="lazy" title='gmap'></iframe>
                         </div>
                     </div>
 
