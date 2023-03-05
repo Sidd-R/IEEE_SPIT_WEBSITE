@@ -11,7 +11,7 @@ const Footer = () => {
                         <div className='mx-5'>
                             <p className='mbr-text'>
                                 <strong>Address</strong>
-                                <br />
+                                {/* <br /> */}
                                 <br />
                                 <p>Bhavans Campus, Old D N Nagar,</p>
                                 <p> Munshi Nagar, Andheri West,</p>
@@ -21,7 +21,7 @@ const Footer = () => {
                             <p className='mbr-text'>
                                 <strong>Contacts</strong>
                                 <br />
-                                <br />
+                                {/* <br /> */}
                                 <p>
                                     Email : <a href='mailto: ieee@spit.ac.in'> ieee@spit.ac.in</a><br />
                                     Phone:  <a href='tel:8291403220'>82914 03220</a>
@@ -29,10 +29,10 @@ const Footer = () => {
                             </p>
                         </div>
 
-                        <div className='mx-5 '>
+                        <div className='mx-5 mt-5'>
                             <p className='mbr-text'>
                                 <strong>Feedback</strong>
-                                <br />
+                                {/* <br /> */}
                                 <br />
                                 <p>Please send us your ideas,</p>
                                 <p>bug, reports, suggestions!.</p>
