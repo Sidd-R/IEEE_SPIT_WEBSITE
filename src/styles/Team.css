@@ -1,0 +1,39 @@
+.team_container {
+    display: flex;
+    /* padding: 50px; */
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+}
+
+.team_title {
+    margin-top: 50px;
+    font-size: 50px;
+    position: relative;
+}
+.team_cards {
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    position: relative;
+    /* bottom: 0; */
+    width: 100%;
+
+}
+
+#bgvid {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
