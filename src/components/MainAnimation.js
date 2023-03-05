@@ -9,11 +9,7 @@ import { useControls } from 'leva'
 extend({ MeshLineGeometry, MeshLineMaterial })
 
 export default function MainAnimation() {
-  const { dash, count, radius } = useControls({
-    dash: { value: 0.99, min: 0, max: 0.99, step: 0.01 },
-    count: { value: 54, min: 0, max: 200, step: 1 },
-    radius: { value: 28, min: 1, max: 100, step: 1 }
-  })
+
   return (
     <div style={{height:"100vh",width:"100wh"}}>
     <Canvas gl={{alpha:false}} camera={{ position: [0, 0, 5], fov: 90 }} >
