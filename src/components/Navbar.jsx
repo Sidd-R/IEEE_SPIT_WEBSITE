@@ -45,21 +45,21 @@ export default function Navbar() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+              <div className="flex flex-1 items-center sm:items-stretch sm:justify-start align-middle justify-center">
                 <div className="flex flex-shrink-0 items-center">
                   <img
-                    className="block h-8 w-auto lg:hidden"
+                    className="block h-12 w-auto lg:hidden"
                     src={require("../images/ieee_logo.png")}
                     alt="IEEE SPIT LOGO"
                   />
                   <img
-                    className="hidden h-8 w-auto lg:block"
+                    className="hidden h-12 w-auto lg:block"
                     src={require("../images/ieee_logo.png")}
                     alt="IEEE SPIT LOGO"
                   />
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
-                  {navigation?<div className="flex space-x-4 " >
+                  {navigation?<div className="flex space-x-4  " >
                     {navigation.map((item) => (
                       <Link onClick={() => {falsify(item.name)}}
                         key={item.name}

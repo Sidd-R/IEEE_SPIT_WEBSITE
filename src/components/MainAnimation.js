@@ -11,7 +11,12 @@ extend({ MeshLineGeometry, MeshLineMaterial })
 export default function MainAnimation() {
 
   return (
-    <div style={{height:"100vh",width:"100wh"}}>
+    <div style={{height:"100vh",width:"100vw",cursor:"none",position:"relative"}}>
+      <div style={{position:"absolute",top:"40vh",left:"36vw",color:"white",zIndex:"5"}}>
+        <span style={{fontSize:"8vw"}}>IEEE SPIT</span>
+
+      </div>
+      
     <Canvas gl={{alpha:false}} camera={{ position: [0, 0, 5], fov: 90 }} >
       <color attach="background" args={['#101020']} />
       <Lines dash={0.99} count={55} radius={57} colors={[[10, 0.5, 2], [1, 2, 10], '#A2CCB6', '#FCEEB5', '#EE786E', '#e0feff']} />
