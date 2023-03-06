@@ -5,7 +5,9 @@ export default function BlogCard(props) {
 
     return (
         <div className="BlogCardContainer">
-            <div className="card" data-aos="zoom-in">
+            <div className="card" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                 <div>
                     <a href={props.link} target="_blank"><img src={props.img} className="card_image" /></a>
                 </div>
