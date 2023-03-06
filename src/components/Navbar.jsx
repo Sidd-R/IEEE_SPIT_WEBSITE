@@ -47,16 +47,20 @@ export default function Navbar() {
               </div>
               <div className="flex flex-1 items-center sm:items-stretch sm:justify-start align-middle justify-center">
                 <div className="flex flex-shrink-0 items-center">
-                  <img
-                    className="block h-12 w-auto lg:hidden"
-                    src={require("../images/ieee_logo.png")}
-                    alt="IEEE SPIT LOGO"
-                  />
-                  <img
-                    className="hidden h-12 w-auto lg:block"
-                    src={require("../images/ieee_logo.png")}
-                    alt="IEEE SPIT LOGO"
-                  />
+                  <Link to={'/'}>
+                    <img
+                      className="block h-12 w-auto lg:hidden"
+                      src={require("../images/ieee_logo.png")}
+                      alt="IEEE SPIT LOGO"
+                    />
+                  </Link>
+                  <Link to={'/'}>
+                    <img
+                      className="hidden h-12 w-auto lg:block"
+                      src={require("../images/ieee_logo.png")}
+                      alt="IEEE SPIT LOGO"
+                    />
+                  </Link>
                 </div>
                 <div className="hidden sm:ml-6 sm:block sm:mt-2">
                   {navigation?<div className="flex space-x-4  " >
@@ -82,10 +86,9 @@ export default function Navbar() {
           <Disclosure.Panel className="sm:hidden">
             {navigation?<div className="space-y-1 px-2 pt-2 pb-3 ">
               {navigation.map((item) => (
-                <Disclosure.Button
+                <Link
                   key={item.name}
-                  as="a"
-                  href={item.href}
+                  to={item.href}
                   
                   className={classNames(
                     item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
@@ -93,10 +96,10 @@ export default function Navbar() {
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >
-                  <div to={item.href} onClick={() => {falsify(item.name)}}>
+                  <div onClick={() => {falsify(item.name)}}>
                   {item.name}
                   </div>
-                </Disclosure.Button>
+                </Link>
               ))}
             </div>:null}
           </Disclosure.Panel>
