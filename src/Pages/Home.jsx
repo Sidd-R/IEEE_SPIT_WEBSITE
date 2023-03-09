@@ -11,12 +11,13 @@ export const Home = () => {
       <Our x={"Blogs"}/>
       <div className="blog_container mb-10">
         {Blog.map(blog => {
-            return (<BlogCard img={blog.img}
-              title={blog.title}
-              date={blog.date}
-              content={blog.content}
-              link={blog.link}
-            />)}
+          return (<BlogCard img={blog.img}
+            title={blog.title}
+            date={blog.date}
+            content={blog.content}
+            link={blog.link}
+          />)
+        }
         )}
       </div>
     </div>

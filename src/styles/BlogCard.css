@@ -4,6 +4,10 @@
     /* padding: 50px; */
 }
 
+.BlogHeader {
+    display: flex;
+}
+
 body {
     background-color: #EFEBE9;
     box-sizing: border-box;
