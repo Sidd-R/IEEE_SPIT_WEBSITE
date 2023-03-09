@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import '../styles/Events.css'
 import { events } from "../components/Event_description";
+import EventCard from "../components/EventCard";
+import Our from "../components/Our";
 
 function Events() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -18,30 +20,14 @@ function Events() {
   };
 
   return (
-    <div className="carousel">
-      {events.map((event, index) => (
-        <div
-          key={index}
-          className={currentIndex === index ? "active" : ""}
-          style={{ backgroundImage: `url(${event.image})` }}
-        >
-          <section className="event_content">
-            <h2>
-              {event.name}
-            </h2>
-            <p className="content">
-              {event.desc}
-            </p>
-          </section>
-        </div>
-      ))}
-      <button className="prev-btn" onClick={handlePrevClick}>
-        &#8249;
-      </button>
-      <button className="next-btn" onClick={handleNextClick}>
-        &#8250;
-      </button>
+    <>
+    <Our x={"Events"}/>
+    <div className="flex sm:py-10 align-middle justify-center flex-wrap mb-6">
+      {events.map(e => {
+        return <EventCard name={e.name} desc={e.desc} image={e.image}/>
+      })}
     </div>
+    </>
   );
 }
 

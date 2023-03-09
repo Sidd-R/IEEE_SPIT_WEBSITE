@@ -1,13 +1,15 @@
 import BlogCard from "../components/BlogCard.jsx"
 import Blog from "../components/Blog_description.js"
 import MainAnimation from "../components/MainAnimation.js"
+import Our from "../components/Our.jsx"
 import '../styles/Home.css'
 
 export const Home = () => {
   return (
     <div>
       <MainAnimation/>
-      <div className="blog_container">
+      <Our x={"Blogs"}/>
+      <div className="blog_container mb-10">
         {Blog.map(blog => {
             return (<BlogCard img={blog.img}
               title={blog.title}

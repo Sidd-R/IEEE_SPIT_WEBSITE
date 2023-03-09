@@ -29,7 +29,7 @@ const Footer = () => {
                             </p>
                         </div>
 
-                        <div className='mx-5 mt-5'>
+                        <div className='mx-5 mt-5 hidden sm:block'>
                             <p className='mbr-text'>
                                 <strong>Feedback</strong>
                                 {/* <br /> */}
