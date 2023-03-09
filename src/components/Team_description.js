@@ -67,7 +67,7 @@ const team = [{
     post: "Marketing Head",
     image: devanshi
 }, {
-    name: "Keivin Doshi",
+    name: "Kevin Doshi",
     post: "Finance Head",
     image: kevind
 }]
