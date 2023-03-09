@@ -40,8 +40,8 @@ const Footer = () => {
                             </p>
                         </div>
 
-                        <div className='        ' id='map'>
-                            <iframe className=' aspect-square sm:h-96 sm:w-96 rounded-md mt-8 h-60' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.6460492262745!2d72.83392671547509!3d19.123177587060866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9d90e067ba9%3A0x16268e5d6bca2e6a!2sBharatiya%20Vidya%20Bhavan&#39;s%20Sardar%20Patel%20Institute%20of%20Technology%20(SPIT)!5e0!3m2!1sen!2sin!4v1677661519553!5m2!1sen!2sin" style={{ border: "0" }} loading="lazy" title='gmap'></iframe>
+                        <div className='' id='map'>
+                            <iframe className=' aspect-square sm:h-60 sm:w-80 rounded-md mt-8 h-48' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.6460492262745!2d72.83392671547509!3d19.123177587060866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9d90e067ba9%3A0x16268e5d6bca2e6a!2sBharatiya%20Vidya%20Bhavan&#39;s%20Sardar%20Patel%20Institute%20of%20Technology%20(SPIT)!5e0!3m2!1sen!2sin!4v1677661519553!5m2!1sen!2sin" style={{ border: "0" }} loading="lazy" title='gmap'></iframe>
                         </div>
                     </div>
 
