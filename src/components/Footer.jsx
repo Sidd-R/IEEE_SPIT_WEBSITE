@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faLinkedinIn, faGithub, faMedium, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faLinkedinIn,  faMedium, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import '../styles/footer.css'
 const Footer = () => {
 
@@ -52,11 +52,11 @@ const Footer = () => {
                                 <div className="hr"></div>
                                 <div className="contact-social">
                                     <ul>
-                                        <li><a className="hover-target" href="#k"><FontAwesomeIcon icon={faFacebook} /></a></li>
-                                        <li><a className="hover-target" href="#g"> <FontAwesomeIcon icon={faLinkedinIn} /></a></li>
-                                        <li><a className="hover-target" href="#f"><FontAwesomeIcon icon={faGithub} /></a></li>
-                                        <li><a className="hover-target" href="#e"><FontAwesomeIcon icon={faInstagram} /></a></li>
-                                        <li><a className="hover-target" href="#a"><FontAwesomeIcon icon={faMedium} /></a></li>
+                                        <li><a className="hover-target" href="https://www.facebook.com/sp.ieee/"><FontAwesomeIcon icon={faFacebook} /></a></li>
+                                        <li><a className="hover-target" href="https://www.linkedin.com/company/ieee-spit/"> <FontAwesomeIcon icon={faLinkedinIn} /></a></li>
+                                        {/* <li><a className="hover-target" href="#f"><FontAwesomeIcon icon={faGithub} /></a></li> */}
+                                        <li><a className="hover-target" href="https://www.instagram.com/ieee_spit/"><FontAwesomeIcon icon={faInstagram} /></a></li>
+                                        <li><a className="hover-target" href="https://medium.com/@ieee_spit"><FontAwesomeIcon icon={faMedium} /></a></li>
                                     </ul>
                                 </div>
                             </div>

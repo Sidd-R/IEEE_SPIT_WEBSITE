@@ -4,7 +4,7 @@ import { MeshLineGeometry, MeshLineMaterial } from 'meshline'
 import { extend, Canvas, useFrame } from '@react-three/fiber'
 import { EffectComposer, Bloom } from '@react-three/postprocessing'
 import { easing } from 'maath'
-import { useControls } from 'leva'
+// import { useControls } from 'leva'
 
 extend({ MeshLineGeometry, MeshLineMaterial })
 
@@ -42,6 +42,7 @@ function Lines({ dash, count, colors, radius = 50, rand = THREE.MathUtils.randFl
         curve: curve.flatMap((point) => point.toArray())
       }
     })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [colors, count, radius])
   return lines.map((props, index) => <Fatline key={index} dash={dash} {...props} />)
 }

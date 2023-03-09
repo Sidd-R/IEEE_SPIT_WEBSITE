@@ -1,7 +1,7 @@
 import TeamCard from "../components/TeamCard"
 import '../styles/Team.css'
 import team from "../components/Team_description"
-import bgvid from '../images/video-bg-light.mp4'
+// import bgvid from '../images/video-bg-light.mp4'
 import Our from "../components/Our"
 
 export const Team = () => {
