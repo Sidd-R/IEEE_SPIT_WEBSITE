@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b9038716.css",
+    "main.js": "/static/js/main.f6da07a4.js",
+    "static/media/siddhant.jpg": "/static/media/siddhant.b94d60b665e4e69079dc.jpg",
+    "static/media/audience.png": "/static/media/audience.4d00610f55b04d8ac7f5.png",
+    "static/media/malay.jpg": "/static/media/malay.0daf3335f6cde8b9701f.jpg",
+    "static/media/ieee_logo.png": "/static/media/ieee_logo.8e2aa4ad5a7ec1e32785.png",
+    "static/media/navneet.jpeg": "/static/media/navneet.0a1b8487778fa9934816.jpeg",
+    "static/media/dewyani.jpeg": "/static/media/dewyani.55f81d19405c5c8cf98b.jpeg",
+    "static/media/electric_car.jpg": "/static/media/electric_car.f7944707df5959009a80.jpg",
+    "static/media/shubh.jpg": "/static/media/shubh.6beb6caf4c534e4ca08b.jpg",
+    "static/media/jaivik.jpeg": "/static/media/jaivik.c4f5d2d1b7465f370a89.jpeg",
+    "static/media/sridhar.JPG": "/static/media/sridhar.580a36329745e2047f14.JPG",
+    "static/media/samarth.jpg": "/static/media/samarth.9b9f2291ff538b52b7ab.jpg",
+    "static/media/speaker2.jpeg": "/static/media/speaker2.74262afb8181a40c6c6b.jpeg",
+    "static/media/kevin.jpeg": "/static/media/kevin.2dcbcf960f5a5133b02b.jpeg",
+    "static/media/devanshi.jpg": "/static/media/devanshi.e667d4c5fa9a1a4ff534.jpg",
+    "static/media/api.png": "/static/media/api.1ea0f228ee47fcd41086.png",
+    "static/media/gauri.jpeg": "/static/media/gauri.8a2835a80e7e8e1efb63.jpeg",
+    "static/media/placement1.jpeg": "/static/media/placement1.1d63454a125c3b7b7d49.jpeg",
+    "static/media/atharva.jpeg": "/static/media/atharva.a416c6e522f8b5a1e84a.jpeg",
+    "static/media/fedlearning.png": "/static/media/fedlearning.cba79c8115d3fa68a593.png",
+    "static/media/router.png": "/static/media/router.0c206106fe43d20c68c0.png",
+    "static/media/techbrawl1.jpeg": "/static/media/techbrawl1.6e74a91222f04127ccb8.jpeg",
+    "static/media/kevind.jpg": "/static/media/kevind.640eb944ca56100078c7.jpg",
+    "static/media/ayushi2.jpeg": "/static/media/ayushi2.de52f2ee6e7fb9ddc349.jpeg",
+    "index.html": "/index.html",
+    "main.b9038716.css.map": "/static/css/main.b9038716.css.map",
+    "main.f6da07a4.js.map": "/static/js/main.f6da07a4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b9038716.css",
+    "static/js/main.f6da07a4.js"
+  ]
+}
