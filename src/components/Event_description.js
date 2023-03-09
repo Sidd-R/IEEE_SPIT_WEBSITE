@@ -4,19 +4,19 @@ import techbrawl1 from '../images/techbrawl1.jpeg'
 import placement1 from '../images/placement1.jpeg'
 
 export const events = [{
-    name: "Aarambh 2022",
-    desc: "lsdkjflsdjflksjdflksj",
-    image: audience
+    name: "Tackling Placements 2023",
+    desc: "A seminar by our college's alumni about placements and higher studies",
+    image: placement1
 }, {
     name: "Webinar on Blockchain",
-    desc: "soidfjpdsjfsdlfksdfsdfko",
+    desc: "A webinar by instustry experts to get insights on the current usage of blockchain",
     image: speaker2
+},{
+    name: "Aarambh 2022",
+    desc: "A fun ice breaker session for FEs",
+    image: audience
 }, {
     name: "Techbrawl 2022",
-    desc: "kjdfjlskjfl;sjfdlsjdf",
+    desc: "A tech competition for FEs",
     image: techbrawl1
-}, {
-    name: "Tackling Placements",
-    desc: "sdlfjsldfjlsljjflsdjf",
-    image: placement1
-}]
+}, ]
