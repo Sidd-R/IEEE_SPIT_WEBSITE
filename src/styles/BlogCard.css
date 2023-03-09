@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
 
 .BlogCardContainer {
+    display: flex;
     padding: 50px;
+}
+
+.BlogHeader {
+    display: flex;
 }
 
 body {
