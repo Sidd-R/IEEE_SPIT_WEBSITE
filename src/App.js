@@ -9,14 +9,15 @@ import './styles/App.css'
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" >
       <Navbar />
-
-      <Routes>
+      <div style={{marginTop:"10vh",zIndex:"5"}}>
+      <Routes >
         <Route path="/" element={<Home />} />
         <Route path="/events" element={<Events />} />
         <Route path="/team" element={<Team />} />
       </Routes>
+      </div>
       <Footer />
     </div>
   );
