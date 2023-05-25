@@ -5,7 +5,7 @@ const Footer = () => {
 
     return (
         <div>
-            <section className="contact-area" id="contact">
+            <section className="contact-area mt-28" id="contact">
                 <div className="container">
                     <div className="flex flex-wrap sm:space-x-6 sm:justify-evenly mx-14 flex-col sm:flex-row ">
                         <div className='mx-5'>

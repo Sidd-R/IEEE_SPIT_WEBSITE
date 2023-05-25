@@ -4,6 +4,7 @@ import { MeshLineGeometry, MeshLineMaterial } from 'meshline'
 import { extend, Canvas, useFrame } from '@react-three/fiber'
 import { EffectComposer, Bloom } from '@react-three/postprocessing'
 import { easing } from 'maath'
+import '../styles/Home.css'
 // import { useControls } from 'leva'
 
 extend({ MeshLineGeometry, MeshLineMaterial })
@@ -11,15 +12,18 @@ extend({ MeshLineGeometry, MeshLineMaterial })
 export default function MainAnimation() {
 
   return (
-    <div style={{height:"80vh",width:"100vw",cursor:"crosshair",position:"relative"}}>
-      <div style={{position:"absolute",top:"25vh",left:"50%",transform:"translate(-50%, 0)",color:"white",zIndex:"5"}}>
+    <div style={{height:"80vh",width:"100vw",cursor:"crosshair"}}>
+      <div style={{position:"absolute",top:"30vh",left:"50%",transform:"translate(-50%, 0)",color:"white",zIndex:"5"}} className='mt-24 sm:mt-10'>
         {/* <span style={{fontSize:"8vw"}}>IEEE SPIT</span> */}
 
-        <img src={require("../images/ieee_logo.png")} className=' ' style={{width:"30vh"}}/>
+        <img src={require("../images/ieee_logo.png")}  style={{width:"30vh"}}/>
+        <div className='typewriter'>
+        <h1 >IEEE SPIT</h1>
+        </div>
       </div>
 
 
-    <Canvas gl={{alpha:false}} camera={{ position: [0, 0, 5], fov: 90 }} >
+    <Canvas gl={{alpha:false}} camera={{ position: [0, 0, 5], fov: 90 }} style={{position:"fixed",zIndex:"-6",}}>
       <color attach="background" args={['#101020']} />
       {/*[10, 0.5, 2], [1, 2, 10], '#A2CCB6', '#FCEEB5', '#EE786E', '#e0feff']} */}
       <Lines dash={0.99} count={45} radius={97} colors={[ '#05598D', '#E4F1F4', '#0E7CB5', '#059CD9']} />

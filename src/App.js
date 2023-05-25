@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App" >
       <Navbar />
-      <div style={{marginTop:"10vh",zIndex:"5"}}>
+      <div style={{marginTop:"10vh",zIndex:"5",backgroundColor:"(0,0,0,0.1)"}}>
       <Routes >
         <Route path="/" element={<Home />} />
         <Route path="/events" element={<Events />} />
