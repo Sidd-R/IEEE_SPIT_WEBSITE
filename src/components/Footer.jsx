@@ -4,21 +4,21 @@ import '../styles/footer.css'
 const Footer = () => {
 
     return (
-        <div>
+        <div >
             <section className="contact-area mt-28" id="contact">
                 <div className="container">
                     <div className="flex flex-wrap sm:space-x-6 sm:justify-evenly mx-14 flex-col sm:flex-row ">
-                        <div className='mx-5'>
+                        <div className='mx-2'>
                             <p className='mbr-text'>
                                 <strong>Address</strong>
                                 {/* <br /> */}
                                 <br />
-                                <p>Bhavans Campus, Old D N Nagar,</p>
-                                <p> Munshi Nagar, Andheri West,</p>
-                                <p> Mumbai, Maharashtra 400058</p>
+                                <div>Bhavans Campus, Old DN Nagar,</div>
+                                <div> Munshi Nagar, Andheri West,</div>
+                                <div> Mumbai, Maharashtra 400058</div>
                             </p><br />
 
-                            <p className='mbr-text'>
+                            <div className='mbr-text text-gray-100'>
                                 <strong>Contacts</strong>
                                 <br />
                                 {/* <br /> */}
@@ -26,7 +26,7 @@ const Footer = () => {
                                     Email : <a href='mailto: ieee@spit.ac.in'> ieee@spit.ac.in</a><br />
                                     Phone:  <a href='tel:8291403220'>82914 03220</a>
                                 </p>
-                            </p>
+                            </div>
                         </div>
 
                         <div className='mx-5 mt-5 hidden sm:block'>
@@ -34,9 +34,9 @@ const Footer = () => {
                                 <strong>Feedback</strong>
                                 {/* <br /> */}
                                 <br />
-                                <p>Please send us your ideas,</p>
-                                <p>bug, reports, suggestions!.</p>
-                                <p> Any feedback would be appreciated</p>
+                                <div>Please send us your ideas,</div>
+                                <div>bug, reports, suggestions!.</div>
+                                <div> Any feedback would be appreciated</div>
                             </p>
                         </div>
 
@@ -68,6 +68,12 @@ const Footer = () => {
             {/* <!-- =============== 1.9 Footer Area Start ====================--> */}
             <footer>
                 <p id='p1' >Copyright &copy; 2023 <img className='inline' src={require("../images/ieee_logo.png")} alt="logo" /> All Rights Reserved.</p>
+            </footer>
+            <footer className='px-3 py-2 text-right text-sm  ' style={{borderTop:"1px solid #353C46"}}>
+                Made by 
+                <a className='text-gray-300 italic' href='https://www.linkedin.com/in/siddhant-rao-801323231/'> Siddhant Rao</a>, 
+                <a className='text-gray-300 italic' href='https://www.linkedin.com/in/navneet-nair-3546b0237/'> Navneet Nair</a>, 
+                <a className='text-gray-300 italic' href='https://www.linkedin.com/in/samarth-gupta-36aa32201/'> Samarth Gupta</a>
             </footer>
         </div>
     );

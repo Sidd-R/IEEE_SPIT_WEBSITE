@@ -10,10 +10,10 @@ export const Home = () => {
     <div>
       <MainAnimation/>
       <AboutIEEE/> 
-      <div className="text-white ">
+      <div className="text-white mt-7">
       <Our x={"Blogs"}/>
       </div>
-      <div className="blog_container mb-10">
+      <div className="blog_container sm:mb-7 mb-0  mt-4 ">
         {Blog.map(blog => {
           return (<BlogCard img={blog.img}
             title={blog.title}

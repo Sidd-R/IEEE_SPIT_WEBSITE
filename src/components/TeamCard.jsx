@@ -11,10 +11,10 @@ const TeamCard = (props) => {
                     {/* </center> */}
                 </div>
                 <div className='team_info'>
-                    <div>
+                    <div className=' text-2xl'>
                         {props.name}
                     </div>
-                    <div style={{ fontSize: '20px', paddingBottom: '10px' }}>
+                    <div style={{ fontSize: '20px', paddingBottom: '10px' }} className='text-gray-200   '>
                         {props.post}
                     </div>
                 </div>

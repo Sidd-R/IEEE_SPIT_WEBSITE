@@ -13,8 +13,19 @@ import devanshi from '../images/team/devanshi.jpg'
 import kevind from '../images/team/kevind.jpg'
 import malay from '../images/team/malay.jpg'
 import jaivik from '../images/team/jaivik.jpeg'
+import pratamesh from '../images/team/pratamesh.jpg'
+import talele from '../images/team/Prof_talele.png'
+import ambawade from '../images/team/prof_ambawade.jpg'
 
 const team = [{
+    name: "Prof. Dayanand Ambavade",
+    post: "Mentor, IEEE-SPIT Student Committee",
+    image: ambawade
+}, {
+    name: "Prof. Kiran Talele",
+    post: "Treasurer (Bombay Section)",
+    image: talele
+}, {
     name: "Kevin Xavier",
     post: "Chairperson",
     image: kevin
@@ -27,6 +38,10 @@ const team = [{
     post: "Secretary",
     image: ayushi2
 }, {
+    name: "Pratamesh Kulkarni",
+    post: "Deputy Secretary",
+    image: pratamesh
+},{
     name: "Samarth Gupta",
     post: "Technical Head",
     image: samarth

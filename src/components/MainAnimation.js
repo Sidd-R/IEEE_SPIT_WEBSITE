@@ -13,12 +13,12 @@ export default function MainAnimation() {
 
   return (
     <div style={{height:"80vh",width:"100vw",cursor:"crosshair"}}>
-      <div style={{position:"absolute",top:"30vh",left:"50%",transform:"translate(-50%, 0)",color:"white",zIndex:"5"}} className='mt-24 sm:mt-10'>
+      <div style={{position:"absolute",top:"30vh",left:"50%",transform:"translate(-50%, 0)",color:"white",zIndex:"5"}} className='mt-10 sm:mt-10'>
         {/* <span style={{fontSize:"8vw"}}>IEEE SPIT</span> */}
 
-        <img src={require("../images/ieee_logo.png")}  style={{width:"30vh"}}/>
+        <img src={require("../images/ieee_logo.png")}  style={{width:"30vh"}} alt='IEEE Logo'/>
         <div className='typewriter'>
-        <h1 >IEEE SPIT</h1>
+        <h1 className=''>IEEE SPIT</h1>
         </div>
       </div>
 
