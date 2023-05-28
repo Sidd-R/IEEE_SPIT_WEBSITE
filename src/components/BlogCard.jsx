@@ -5,9 +5,7 @@ export default function BlogCard(props) {
 
     return (
         <div className="BlogCardContainer w-72 h-auto mt-10 mx-4">
-            <div className="card" data-aos="fade-right"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine">
+            <div className="card" >
                 <div>
                     <a href={props.link} target="_blank" rel="noreferrer"><img src={props.img} className="card_image w-72 h-52 object-cover" alt="blog pic" /></a>
                 </div>

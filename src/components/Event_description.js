@@ -3,11 +3,25 @@ import speaker2 from '../images/speaker2.jpeg'
 import techbrawl1 from '../images/techbrawl1.jpeg'
 import placement1 from '../images/placement1.jpeg'
 import codehunt from '../images/codehunt.jpg'
-
+import IC from '../images/IC.jpg'
+import gsoc from '../images/gsoc_webinar.png'
+import peripherithon from '../images/Peripherithon.jpg'
 export const events = [{
+    name: "Peripherathon 2023",
+    desc: "A AI powered IoT hackathon",
+    image: peripherithon
+}, {
     name: "codeHunt 2023",
     desc:"A mix of treasure hunt and a CP contest along with the guidance of ICPC finalist Vivek Gupta",
     image: codehunt
+}, {
+    name: "Innovation Cup 2023",
+    desc: "A hardware hackathon",
+    image: IC
+}, {
+    name: "GSOC Webinar 2023",
+    desc: "A webinar on how to get selected for GSOC",
+    image: gsoc
 }, {
     name: "Tackling Placements 2023",
     desc: "A seminar by our college's alumni about placements and higher studies",

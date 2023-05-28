@@ -17,7 +17,7 @@ export default function MainAnimation() {
         {/* <span style={{fontSize:"8vw"}}>IEEE SPIT</span> */}
 
         <img src={require("../images/ieee_logo.png")}  style={{width:"30vh"}} alt='IEEE Logo'/>
-        <div className='typewriter'>
+        <div className='typewriter mt-4'>
         <h1 className=''>IEEE SPIT</h1>
         </div>
       </div>
@@ -26,7 +26,7 @@ export default function MainAnimation() {
     <Canvas gl={{alpha:false}} camera={{ position: [0, 0, 5], fov: 90 }} style={{position:"fixed",zIndex:"-6",}}>
       <color attach="background" args={['#101020']} />
       {/*[10, 0.5, 2], [1, 2, 10], '#A2CCB6', '#FCEEB5', '#EE786E', '#e0feff']} */}
-      <Lines dash={0.99} count={45} radius={97} colors={[ '#05598D', '#E4F1F4', '#0E7CB5', '#059CD9']} />
+      <Lines dash={0.99} count={27} radius={97} colors={[ '#05598D', '#E4F1F4', '#0E7CB5', '#059CD9']} />
       <Rig />
       <EffectComposer>
         <Bloom mipmapBlur luminanceThreshold={1} radius={0.6} />

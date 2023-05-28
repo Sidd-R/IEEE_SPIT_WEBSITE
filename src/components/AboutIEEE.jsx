@@ -74,17 +74,17 @@ function AboutIEEE() {
           <div className='flex sm:flex-shrink flex-wrap justify-evenly mt-5 space-y-4'>
             <div className=''>
               <a href='http://ieee-aess.spit.ac.in'>
-              <img src={require('../images/ieeeaess.jpeg')} atl='IEEE AESS SPIT Logo' className='sm:h-40 sm:w-40 h-60 w-60 '/>
+              <img src={require('../images/ieeeaess.jpeg')} alt='IEEE AESS SPIT Logo' className='sm:h-40 sm:w-40 h-60 w-60 '/>
               <div className='text-xl text-center mt-1'>IEEE AESS</div>
               </a>
             </div>
             <div className=''>
-              <img src={require('../images/ieeecs.jpeg')} atl='IEEE CS SPIT Logo' className='sm:h-40 sm:w-40 h-60 w-60'/>
+              <img src={require('../images/ieeecs.jpeg')} alt='IEEE CS SPIT Logo' className='sm:h-40 sm:w-40 h-60 w-60'/>
               <div className='text-xl text-center mt-1'>IEEE CS</div>
             </div>
             <div className=''>
               <a href='https://wie.spit.ac.in/'>
-              <img src={require('../images/wie-logo.png')} atl='IEEE WIE SPIT Logo' className='sm:h-40 sm:w-40 h-60 w-60'/>
+              <img src={require('../images/wie-logo.png')} alt='IEEE WIE SPIT Logo' className='sm:h-40 sm:w-40 h-60 w-60'/>
               <div className='text-xl text-center mt-1'>IEEE WIE</div>
               </a>
             </div>

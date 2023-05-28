@@ -13,7 +13,9 @@ export const Home = () => {
       <div className="text-white mt-7">
       <Our x={"Blogs"}/>
       </div>
-      <div className="blog_container sm:mb-7 mb-0  mt-4 ">
+      <div className="blog_container sm:mb-7 mb-0  mt-4 " data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
         {Blog.map(blog => {
           return (<BlogCard img={blog.img}
             title={blog.title}
