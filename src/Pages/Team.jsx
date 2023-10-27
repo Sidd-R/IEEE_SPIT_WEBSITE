@@ -8,8 +8,10 @@ export const Team = () => {
   return (
     <>
     <Our x={"Team"}/>
+    <div className=' font-sans text-3xl font-normal mx-8 mb-1 sm:mx-28 mt-6 text-gray-100'>Previous Core</div>
+    <hr className=' bg-black h-0.5   mx-5 sm:mx-24 '/>
     <div className="team_container pb-6">
-        <div className="team_cards">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
           {team.map(member => {
             return(
               <TeamCard 

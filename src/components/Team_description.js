@@ -1,11 +1,11 @@
 import kevin from '../images/team/kevin.jpeg'
 import atharva from '../images/team/atharva.jpeg'
-// import ayushi from '../images/team/ayushi.jpg'
+import ayushi from '../images/team/ayushi.jpg'
 import samarth from '../images/team/samarth.jpg'
 import navneet from '../images/team/navneet.jpeg'
 import siddhant from '../images/team/siddhant.jpg'
 import shubh from '../images/team/shubh.jpg'
-import ayushi2 from '../images/team/ayushi2.jpeg'
+// import ayushi2 from '../images/team/ayushi2.jpeg'
 import dewyani from '../images/team/dewyani.jpeg'
 import sridhar from '../images/team/sridhar.JPG'
 import gauri from '../images/team/gauri.jpeg'
@@ -18,9 +18,11 @@ import talele from '../images/team/Prof_talele.png'
 import kulkarni from '../images/team/prof_sujata.jpeg'
 import ajeyaraj from '../images/team/Ajeyaraja.jpg'
 
+
+
 const team = [{
     name: "Prof. Sujata Kulkarni",
-    post: "Mentor, IEEE-SPIT Student Committee",
+    post: "Mentor, IEEE     SPIT",
     image: kulkarni
 }, {
     name: "Prof. Kiran Talele",
@@ -37,7 +39,7 @@ const team = [{
 }, {
     name: "Ayushi Naik",
     post: "Secretary",
-    image: ayushi2
+    image: ayushi
 }, {
     name: "Pratamesh Kulkarni",
     post: "Deputy Secretary",
@@ -92,4 +94,45 @@ const team = [{
     image: kevind
 }]
 
+const team2023 = [
+    {
+        name: "Navneet Nair",
+        post: "Chairperson",
+        linkedin: "",
+        instagram: "",
+        // image
+    },
+    {
+        name: "Ayushi Naik",
+        post: "Vice Chairperson",
+        linkedin: "",
+        instagram: "",
+    },
+    {
+        name: "Siddhant Rao",
+        post: "Tech Head",
+        linkedin: "",
+        instagram: "",
+    },
+    {
+        name: "Shrutika Yeole",
+        post: "Secretary",
+        linkedin: "",
+        instagram: "",
+    },
+    {
+        name: "Mega Agarwal",
+        post: "Deputy Secretary",
+        linkedin: "",
+        instagram: "",
+    },
+    {
+        name: "Mihir Mulay",
+        post: "Marketing Head",
+        linkedin: "",
+        instagram: "",
+    }
+]
+
 export default team
+

@@ -1,42 +1,140 @@
-import { useState } from 'react'
-import { Disclosure } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { Link } from 'react-router-dom'
+// import { useState } from 'react'
+// import { Disclosure } from '@headlessui/react'
+// import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+// import { Link } from 'react-router-dom'
+
+// export default function Navbar() {
+//   function classNames(...classes) {
+//     return classes.filter(Boolean).join(' ')
+//   }
+//   const [navigation, setNavigation] = useState([
+//     { name: 'Home', href: '/', current: true },
+//     { name: 'Events', href: 'events', current: false },
+//     { name: 'Team', href: 'team', current: false },
+//     // { name: 'Calendar', href: '#', current: false },
+//   ])
+//   const navigation1 = [
+//     { name: 'Home', href: '/', current: true },
+//     { name: 'Events', href: 'events', current: false },
+//     { name: 'Team', href: 'team', current: false },
+//     // { name: 'Calendar', href: '#', current: false },
+//   ]
+
+//   const falsify = (i) => {
+//     navigation1.forEach(e => e.current = false)
+//     navigation1.forEach(e => {if(e.name === i) e.current = true})
+//     console.log("hello");
+//     setNavigation(null);
+//     setNavigation(navigation1);
+//   }
+
+//   return (
+//     <Disclosure as="nav" className="bg-gray-800 " style={{backgroundColor:"#043168",position:"fixed",width:"100vw",zIndex:"10"}}>
+//       {({ open }) => (
+//         <>
+//           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+//             <div className="relative flex  items-center justify-between h-16" >
+//               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+//                 {/* Mobile menu button*/}
+//                 <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+//                   {open ? (
+//                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+//                   ) : (
+//                     <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+//                   )}
+//                 </Disclosure.Button>
+//               </div>
+//               <div className="flex flex-1 items-center sm:items-stretch sm:justify-start align-middle justify-center">
+//                 <div className="flex flex-shrink-0 items-center">
+//                   <Link to={'/'}>
+//                     <img
+//                       className="block h-12 w-auto lg:hidden"
+//                       src={require("../images/ieee_logo.png")}
+//                       alt="IEEE SPIT LOGO"
+//                     />
+//                   </Link>
+//                   <Link to={'/'}>
+//                     <img
+//                       className="hidden h-12 w-auto lg:block"
+//                       src={require("../images/ieee_logo.png")}
+//                       alt="IEEE SPIT LOGO"
+//                     />
+//                   </Link>
+//                 </div>
+//                 <div className="hidden sm:ml-6 sm:block sm:mt-2">
+//                   {navigation?<div className="flex space-x-4  " >
+//                     {navigation.map((item) => (
+//                       <Link onClick={() => {falsify(item.name)}}
+//                         key={item.name}
+//                         to={item.href}
+//                         className={classNames(
+//                           item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+//                           'rounded-md px-3 py-2 text-sm font-medium'
+//                         )}
+//                         aria-current={item.current ? 'page' : undefined}
+//                       >
+//                         {item.name}
+//                       </Link>
+//                     ))}
+//                   </div>:null}
+//                 </div>
+//               </div>
+//             </div>
+//           </div>
+
+//           <Disclosure.Panel className="sm:hidden">
+//             {navigation?<div className="space-y-1 px-2 pt-2 pb-3 ">
+//               {navigation.map((item) => (
+//                 <Link
+//                   key={item.name}
+//                   to={item.href}
+
+//                   className={classNames(
+//                     item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+//                     'block rounded-md px-3 py-2 text-base font-medium'
+//                   )}
+//                   aria-current={item.current ? 'page' : undefined}
+//                 >
+//                   <div onClick={() => {falsify(item.name)}}>
+//                   {item.name}
+//                   </div>
+//                 </Link>
+//               ))}
+//             </div>:null}
+//           </Disclosure.Panel>
+//         </>
+//       )}
+//     </Disclosure>
+//   )
+// }
+
+import { Fragment } from 'react';
+import { Disclosure,} from '@headlessui/react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { Link, useLocation } from 'react-router-dom';
+
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ');
+}
 
 export default function Navbar() {
-  function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
-  }
-  const [navigation, setNavigation] = useState([
-    { name: 'Home', href: '/', current: true },
-    { name: 'Events', href: 'events', current: false },
-    { name: 'Team', href: 'team', current: false },
-    // { name: 'Calendar', href: '#', current: false },
-  ])
-  const navigation1 = [
-    { name: 'Home', href: '/', current: true },
-    { name: 'Events', href: 'events', current: false },
-    { name: 'Team', href: 'team', current: false },
-    // { name: 'Calendar', href: '#', current: false },
-  ]
-
-  const falsify = (i) => {
-    navigation1.forEach(e => e.current = false)
-    navigation1.forEach(e => {if(e.name === i) e.current = true})
-    console.log("hello");
-    setNavigation(null);
-    setNavigation(navigation1);
-  } 
-
+  const location = useLocation();
+  console.log(location.pathname,location.pathname == '/events',typeof(location.pathname));
+  const navigation = [
+    { name: 'Home', href: '/', current: location.pathname === '/' },
+    { name: 'Events', href: 'events', current: location.pathname === '/events' },
+    { name: 'Team', href: 'team', current: location.pathname === '/team' },
+  ];
   return (
-    <Disclosure as="nav" className="bg-gray-800 " style={{backgroundColor:"#043168",position:"fixed",width:"100vw",zIndex:"10"}}>
+    <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-            <div className="relative flex  items-center justify-between" style={{height:"10vh"}}>
+            <div className="relative flex sm:h-16 h-20 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                  <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -45,31 +143,24 @@ export default function Navbar() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex flex-1 items-center sm:items-stretch sm:justify-start align-middle justify-center">
+              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                  <Link to={'/'}>
-                    <img
-                      className="block h-12 w-auto lg:hidden"
-                      src={require("../images/ieee_logo.png")}
-                      alt="IEEE SPIT LOGO"
-                    />
-                  </Link>
-                  <Link to={'/'}>
-                    <img
-                      className="hidden h-12 w-auto lg:block"
-                      src={require("../images/ieee_logo.png")}
-                      alt="IEEE SPIT LOGO"
-                    />
-                  </Link>
+                  <img
+                    className="sm:h-8 h-14 w-auto"
+                    src={require("../images/ieee_logo.png")}
+                    alt="Your Company"
+                  />
                 </div>
-                <div className="hidden sm:ml-6 sm:block sm:mt-2">
-                  {navigation?<div className="flex space-x-4  " >
+                <div className="hidden sm:ml-6 sm:block">
+                  <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <Link onClick={() => {falsify(item.name)}}
+                      <Link
                         key={item.name}
                         to={item.href}
                         className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                          item.current
+                            ? 'bg-gray-900 text-white'
+                            : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                           'rounded-md px-3 py-2 text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
@@ -77,34 +168,41 @@ export default function Navbar() {
                         {item.name}
                       </Link>
                     ))}
-                  </div>:null}
+                  </div>
                 </div>
+              </div>
+              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              
+
+               
               </div>
             </div>
           </div>
 
           <Disclosure.Panel className="sm:hidden">
-            {navigation?<div className="space-y-1 px-2 pt-2 pb-3 ">
+            <div className="space-y-1 px-2 pb-3 pt-2">
               {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  
-                  className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                    'block rounded-md px-3 py-2 text-base font-medium'
-                  )}
-                  aria-current={item.current ? 'page' : undefined}
-                >
-                  <div onClick={() => {falsify(item.name)}}>
-                  {item.name}
-                  </div>
+                <Link to={item.href}>
+                  <Disclosure.Button
+                    key={item.name}
+                    as="a"
+                    // href={item.href}
+                    className={classNames(
+                      item.current
+                        ? 'bg-gray-900 text-white'
+                        : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                      'block rounded-md px-3 py-2 text-base font-medium'
+                    )}
+                    aria-current={item.current ? 'page' : undefined}
+                  >
+                    {item.name}
+                  </Disclosure.Button>
                 </Link>
               ))}
-            </div>:null}
+            </div>
           </Disclosure.Panel>
         </>
       )}
     </Disclosure>
-  )
+  );
 }

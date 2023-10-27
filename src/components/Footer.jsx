@@ -69,12 +69,12 @@ const Footer = () => {
             <footer>
                 <p id='p1' >Copyright &copy; 2023 <img className='inline' src={require("../images/ieee_logo.png")} alt="logo" /> All Rights Reserved.</p>
             </footer>
-            <footer className='px-3 py-2 text-right text-sm  ' style={{borderTop:"1px solid #353C46"}}>
+            {/* <footer className='px-3 py-2 text-right text-sm  ' style={{borderTop:"1px solid #353C46"}}>
                 Made by 
                 <a className='text-gray-300 italic' href='https://www.linkedin.com/in/siddhant-rao-801323231/'> Siddhant Rao</a>, 
                 <a className='text-gray-300 italic' href='https://www.linkedin.com/in/navneet-nair-3546b0237/'> Navneet Nair</a>, 
                 <a className='text-gray-300 italic' href='https://www.linkedin.com/in/samarth-gupta-36aa32201/'> Samarth Gupta</a>
-            </footer>
+            </footer> */}
         </div>
     );
 };

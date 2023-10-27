@@ -37,7 +37,9 @@ function AboutIEEE() {
 
   const CardA = ({title,content,dur}) => {
     return (
-    <div className='text-white p-4 rounded-sm'  style={{backgroundColor:"rgba(255,255,255,0.3)"}} data-aos="zoom-in" data-aos-duration={dur}>
+    <div className='text-white p-4 rounded-sm'  style={{backgroundColor:"rgba(255,255,255,0.3)"}} 
+    // data-aos="zoom-in" data-aos-duration={dur}
+    >
         <div className='text-3xl mb-3 italic' style={{color:"rgba(255,255,255,0.7)"}}>{title}</div>
         <div className=''>{content}</div>
       </div>
@@ -46,7 +48,9 @@ function AboutIEEE() {
 
   const CardB = ({title, content,effect,link}) => {
     return (
-      <div className='text-white p-4 rounded-sm ' style={{backgroundColor:"#05598D90"}} data-aos={effect} data-aos-duration="1000">
+      <div className='text-white p-4 rounded-sm ' style={{backgroundColor:"#05598D90"}} 
+      // data-aos={effect} data-aos-duration="1000"
+      >
         <div className='text-3xl mb-3 italic'>{title}</div>
         <div>{content}</div>
         <div className=' underline underline-offset-4 font-semibold mt-2'><a href={link}>Read more</a></div>
@@ -67,7 +71,9 @@ function AboutIEEE() {
         })}
       </div>
       <div className=' sm:px-28  px-8  sm:space-y-0 sm:mt-10 mt-7'>
-        <div className='text-white p-4 rounded-sm'  style={{backgroundColor:"rgba(255,255,255,0.3)"}} data-aos="zoom-in" data-aos-duration="1000">
+        <div className='text-white p-4 rounded-sm'  style={{backgroundColor:"rgba(255,255,255,0.3)"}} 
+        // data-aos="zoom-in" data-aos-duration="1000"
+        >
           <div className='text-2xl mb-3 italic sm:text-xl sm:pl-10' style={{color:"rgba(255,255,255)"}}>
             IEEE Student Chapters in SPIT
           </div>

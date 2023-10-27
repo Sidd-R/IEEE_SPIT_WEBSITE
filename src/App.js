@@ -5,13 +5,15 @@ import Navbar from "./components/Navbar"
 import { Home } from "./Pages/Home";
 import { Team } from "./Pages/Team";
 import './styles/App.css'
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import MainAnimation from "./components/MainAnimation";
 
 function App() {
   return (
     <div className="App" >
       <Navbar />
-      <div style={{marginTop:"10vh",zIndex:"5",backgroundColor:"(0,0,0,0.1)"}}>
+      <div style={{marginTop:"10px",zIndex:"5"}}>
+      <MainAnimation/>
+
       <Routes >
         <Route path="/" element={<Home />} />
         <Route path="/events" element={<Events />} />
