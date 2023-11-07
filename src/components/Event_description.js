@@ -7,12 +7,17 @@ import IC from '../images/IC.jpg'
 import gsoc from '../images/gsoc_webinar.png'
 import peripherithon from '../images/Peripherithon.jpg'
 import aarambh23 from '../images/aarambh23.jpg'
+import ieeeday23 from '../images/ieeeday23.jpg'
 import blog23 from '../images/blog23.jpg'
 
 export const events = [{
     name: "Blog Writing 2023",
     desc: "Circular Economy X Blog Writing Competition",
     image: blog23,
+},{
+    name: "IEEE Day 2023",
+    desc: "Celebration of IEEE Day with our Honoured Guests",
+    image: ieeeday23,
 },{
     name: "Aarambh 2023",
     desc: "An Ice breaker Session for our Freshers",
