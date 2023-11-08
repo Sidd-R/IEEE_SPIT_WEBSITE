@@ -37,7 +37,7 @@ function AboutIEEE() {
 
   const CardA = ({title,content,dur}) => {
     return (
-    <div className='text-white p-4 rounded-sm'  style={{backgroundColor:"rgba(255,255,255,0.3)"}} 
+    <div className='text-white p-4 rounded-sm hover:p-6'  style={{backgroundColor:"rgba(255,255,255,0.3)"}} 
     // data-aos="zoom-in" data-aos-duration={dur}
     >
         <div className='text-3xl mb-3 italic' style={{color:"rgba(255,255,255,0.7)"}}>{title}</div>
@@ -60,7 +60,7 @@ function AboutIEEE() {
 
   return (
     <div>
-      <div className='flex sm:px-28 sm:space-x-10 flex-wrap sm:flex-nowrap px-8 space-y-5 sm:space-y-0'>
+      <div className='flex sm:px-28 sm:space-x-10 flex-wrap sm:flex-nowrap px-8 space-y-5 sm:space-y-0 '>
         {CardAContent.map((e,i) => {
           return <CardA title={e.title} content={e.content} key={i} dur={e.dur}/>
         })}

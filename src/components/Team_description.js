@@ -107,6 +107,7 @@ const team2023 = [
         post: "Vice Chairperson",
         linkedin: "",
         instagram: "",
+        // image:
     },
     {
         name: "Siddhant Rao",
