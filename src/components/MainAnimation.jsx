@@ -5,24 +5,31 @@ import { extend, Canvas, useFrame } from '@react-three/fiber';
 import { EffectComposer, Bloom } from '@react-three/postprocessing';
 import { easing } from 'maath';
 import '../styles/Home.css';
-// import { useControls } from 'leva'
 
 extend({ MeshLineGeometry, MeshLineMaterial });
 
 export default function MainAnimation() {
   return (
-    <div className='flex justify-center items-center '>
-     
-
-      <Canvas gl={{alpha:false}} camera={{ position: [0, 0, 5], fov: 90 }} style={{position:"fixed",zIndex:"-6",height:'200vh'}} className='h-screen'>
-      <color attach="background" args={['#101020']} />
-      {/*[10, 0.5, 2], [1, 2, 10], '#A2CCB6', '#FCEEB5', '#EE786E', '#e0feff']} */}
-      <Lines dash={0.99} count={27} radius={97} colors={[ '#05598D', '#E4F1F4', '#0E7CB5', '#059CD9']} />
-      <Rig />
-      <EffectComposer>
-        <Bloom mipmapBlur luminanceThreshold={1} radius={0.6} />
-      </EffectComposer>
-    </Canvas>
+    <div className="flex justify-center items-center ">
+      <Canvas
+        gl={{ alpha: false }}
+        camera={{ position: [0, 0, 5], fov: 90 }}
+        style={{ position: 'fixed', zIndex: '-6', height: '200vh' }}
+        className="h-screen"
+      >
+        <color attach="background" args={['#101020']} />
+        {/*[10, 0.5, 2], [1, 2, 10], '#A2CCB6', '#FCEEB5', '#EE786E', '#e0feff']} */}
+        <Lines
+          dash={0.99}
+          count={27}
+          radius={97}
+          colors={['#05598D', '#E4F1F4', '#0E7CB5', '#059CD9']}
+        />
+        <Rig />
+        <EffectComposer>
+          <Bloom mipmapBlur luminanceThreshold={1} radius={0.6} />
+        </EffectComposer>
+      </Canvas>
     </div>
   );
 }
@@ -51,7 +58,6 @@ function Lines({
         curve: curve.flatMap((point) => point.toArray()),
       };
     });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [colors, count, radius]);
   return lines.map((props, index) => (
     <Fatline key={index} dash={dash} {...props} />
