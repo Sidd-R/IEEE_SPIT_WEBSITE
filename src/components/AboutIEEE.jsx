@@ -95,16 +95,15 @@ function AboutIEEE() {
           );
         })}
       </div>
-      <div className="  sm:space-y-0 sm:mt-10 mt-7">
+      <div className="  sm:space-y-0 mt-14 ">
         <div className="text-white  ">
           <div
-            className="text-xl mb-3 italic sm:text-xl sm:pl-10 mx-8  sm:mx-28 rounded-md"
+            className="text-xl mb-12 italic sm:text-xl sm:pl-10 mx-8  sm:mx-28 rounded-md"
             style={{
               color: 'rgba(255,255,255)',
               backgroundColor: 'rgba(255,255,255,0.3)',
               padding: '15px',
               paddingLeft: '30px',
-              marginBottom: '40px',
             }}
           >
             IEEE Student Chapters

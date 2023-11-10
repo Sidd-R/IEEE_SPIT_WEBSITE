@@ -28,7 +28,7 @@ export const Home = () => {
         </div>
       </div>
       <AboutIEEE />
-      <div className="text-white mt-12">
+      <div className="text-white mt-10">
         <div
           className="text-xl  italic sm:text-xl sm:pl-10 mx-8  sm:mx-28 mt-6 rounded-md"
           style={{

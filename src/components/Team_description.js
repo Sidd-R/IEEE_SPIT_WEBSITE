@@ -15,16 +15,6 @@ const images23 = importAll(
 
 const team22 = [
   {
-    name: 'Prof. Sujata Kulkarni',
-    post: 'Mentor, IEEE SPIT',
-    image: images22['prof_kulkarni.jpg'],
-  },
-  {
-    name: 'Prof. Kiran Talele',
-    post: 'Treasurer (Bombay Section)',
-    image: images22['prof_talele.jpg'],
-  },
-  {
     name: 'Kevin Xavier',
     post: 'Chairperson',
     image: images22['kevin.jpg'],

@@ -5,9 +5,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const TeamCard = (props) => {
   return (
-    <div className="card_container sm:pt-20 p-6 sm:px-10 " key={props.name  }>
+    <div className="card_container sm:pt-12 p-6 sm:pb-5 sm:px-10 " key={props.name  }>
       <div className="card_team w-64 ">
-        <div className="img_container_team hover:opacity-75 relative ">
+        <div className="img_container_team hover:opacity-90 relative ">
           <div className="absolute hover:opacity-100 opacity-0 h-full z-20 w-full flex items-center justify-center ">
             {props.linkedin && (
               <a className="text-white" href={props.linkedin}>

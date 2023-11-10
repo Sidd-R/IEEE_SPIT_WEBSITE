@@ -8,7 +8,7 @@ function Events() {
   return (
     <>
       <Our x={'Events'} />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3   md:px-28 px-8 mt-10 mx-auto place-items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3   md:px-28 px-8 mt-2 mx-auto place-items-center">
         {events2023.map((e,i) => {
           return <EventCard name={e.name} desc={e.desc} image={e.image} key={i}/>;
         })}
@@ -19,7 +19,7 @@ function Events() {
 
       <hr className=" bg-black h-0.5   mx-5 sm:mx-24 " />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3   md:px-28 px-8 mt-10 mx-auto place-items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3   md:px-28 px-8 mt-4 mx-auto place-items-center">
         {events.map((e,i) => {
           return <EventCard name={e.name} desc={e.desc} image={e.image} key={i}/>;
         })}
