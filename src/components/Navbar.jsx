@@ -37,9 +37,9 @@ export default function Navbar() {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <img
-                    className="sm:h-9 h-14 w-auto"
                     src={require('../images/ieee_logo.png')}
-                    alt="Your Company"
+                    className="sm:h-9 h-14 w-auto hover:-hue-rotate-90 transition-all rotatef cursor-crosshair"
+          style={{ transitionDuration: '3000ms' }}
                   />
                 </div>
                 <div className="hidden sm:ml-6 sm:block">

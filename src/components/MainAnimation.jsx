@@ -21,7 +21,7 @@ export default function MainAnimation() {
         {/*[10, 0.5, 2], [1, 2, 10], '#A2CCB6', '#FCEEB5', '#EE786E', '#e0feff']} */}
         <Lines
           dash={0.99}
-          count={27}
+          count={30}
           radius={97}
           colors={['#05598D', '#E4F1F4', '#0E7CB5', '#059CD9']}
         />
@@ -59,6 +59,7 @@ function Lines({
       };
     });
   }, [colors, count, radius]);
+
   return lines.map((props, index) => (
     <Fatline key={index} dash={dash} {...props} />
   ));

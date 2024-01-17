@@ -45,6 +45,7 @@ function AboutIEEE() {
         className="text-white p-4 rounded-md "
         style={{ backgroundColor: 'rgba(255,255,255,0.3)' }}
         // data-aos="zoom-in" data-aos-duration={dur}
+        // data-aos="fade-up" data-aos-duration={dur}
       >
         <div
           className="text-3xl mb-3 italic"

@@ -11,7 +11,16 @@ export const Home = () => {
       .get(
         'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@ieee_spit'
       )
-      .then((res) => setBlogs(res.data.items))
+      .then((res) => {
+        res.data.items.map((item) => {
+          // regex to extract src link from html
+            let f = item.description
+            item.thumbnail = f.substring(f.indexOf('src="')+5,f.indexOf('"',f.indexOf('src="')+9))
+
+
+          // item.description.
+        })
+        setBlogs(res.data.items)})
       .catch((e) => console.log(e));
   });
   return (
@@ -19,8 +28,9 @@ export const Home = () => {
       <div className="mt-10 sm:mt-10 flex flex-col justify-center items-center z-10 text-gray-50 py-20">
         <img
           className="hover:hue-rotate-180 transition-all rotatef cursor-crosshair"
-          src={require('../images/ieee_logo.png')}
           style={{ width: '30vh', transitionDuration: '3000ms' }}
+
+          src={require('../images/ieee_logo.png')}
           alt="IEEE Logo"
         />
         <div className="typewriter mt-4">
