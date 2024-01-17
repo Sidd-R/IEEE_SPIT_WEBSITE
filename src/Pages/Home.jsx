@@ -3,6 +3,8 @@ import AboutIEEE from '../components/AboutIEEE.jsx';
 import BlogCard from '../components/BlogCard.jsx';
 import '../styles/Home.css';
 import axios from 'axios';
+import { Controls, PlayState, Tween } from 'react-gsap';
+
 
 export const Home = () => {
   const [blogs, setBlogs] = useState([]);
@@ -26,13 +28,24 @@ export const Home = () => {
   return (
     <div>
       <div className="mt-10 sm:mt-10 flex flex-col justify-center items-center z-10 text-gray-50 py-20">
-        <img
+  <Tween from={{x:-200}} to={{ x: 0, rotation: 360 }} duration={2} ease="back.out(2.7)">
+  <img
+          className="hover:hue-rotate-180 transition-all rotatef cursor-crosshair"
+          style={{ width: '30vh', 
+          // transitionDuration: '3000ms' 
+        }}
+
+          src={require('../images/ieee_logo.png')}
+          alt="IEEE Logo"
+        />
+  </Tween>
+        {/* <img
           className="hover:hue-rotate-180 transition-all rotatef cursor-crosshair"
           style={{ width: '30vh', transitionDuration: '3000ms' }}
 
           src={require('../images/ieee_logo.png')}
           alt="IEEE Logo"
-        />
+        /> */}
         <div className="typewriter mt-4">
           <h1 className="">IEEE SPIT</h1>
         </div>

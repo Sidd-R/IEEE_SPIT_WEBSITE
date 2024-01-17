@@ -1,4 +1,5 @@
 import React from 'react';
+import { Reveal, Tween } from 'react-gsap';
 
 const CardAContent = [
   {
@@ -39,22 +40,23 @@ const cardBContent = [
 ];
 
 function AboutIEEE() {
-  const CardA = ({ title, content, dur }) => {
+  const CardA = ({ title, content}) => {
     return (
-      <div
-        className="text-white p-4 rounded-md "
-        style={{ backgroundColor: 'rgba(255,255,255,0.3)' }}
-        // data-aos="zoom-in" data-aos-duration={dur}
-        // data-aos="fade-up" data-aos-duration={dur}
-      >
-        <div
-          className="text-3xl mb-3 italic"
-          style={{ color: 'rgba(255,255,255,0.7)' }}
-        >
-          {title}
-        </div>
-        <div className="">{content}</div>
-      </div>
+          <div
+            className="text-white p-4 rounded-md "
+            style={{ backgroundColor: 'rgba(255,255,255,0.3)' }}
+            // data-aos="zoom-in" data-aos-duration={dur}
+            // data-aos="fade-up" data-aos-duration={dur}
+          >
+            <div
+              className="text-3xl mb-3 italic"
+              style={{ color: 'rgba(255,255,255,0.7)' }}
+            >
+              {title}
+            </div>
+            <div className="">{content}</div>
+          </div>
+        
     );
   };
 
@@ -77,11 +79,32 @@ function AboutIEEE() {
   return (
     <div>
       <div className="flex sm:px-28 sm:space-x-10 flex-wrap sm:flex-nowrap px-8 space-y-5 sm:space-y-0 ">
+
+      {/* <Reveal repeat>
+              <Tween from={{ opacity: 0 }} duration={2}>
+                <CardA
+                  title={CardAContent[0].title}
+                  content={CardAContent[0].content}
+                  // dur={CardAContent[0].dur}
+                />
+              </Tween>
+            </Reveal> */}
+
+      {/* <Reveal repeat>
+              <Tween from={{ opacity: 0 }} duration={2}> */}
         {CardAContent.map((e, i) => {
           return (
-            <CardA title={e.title} content={e.content} key={i} dur={e.dur} />
+                <CardA
+                  title={e.title}
+                  content={e.content}
+                  key={i}
+                  // dur={e.dur}
+                />
+              
           );
         })}
+        {/* </Tween>
+            </Reveal> */}
       </div>
       <div className="flex sm:px-28 sm:space-x-10 flex-wrap sm:flex-nowrap px-8 space-y-5 sm:space-y-0 mt-7 sm:mt-10">
         {cardBContent.map((e, i) => {
