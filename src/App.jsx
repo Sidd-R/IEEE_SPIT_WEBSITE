@@ -6,6 +6,7 @@ import { Home } from "./Pages/Home";
 import { Team } from "./Pages/Team";
 import './styles/App.css'
 import MainAnimation from "./components/MainAnimation";
+import { Analytics } from "@vercel/analytics/react"
 // import { gsap } from "gsap";
     
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -20,6 +21,7 @@ function App() {
   // gsap.registerPlugin(ScrollTrigger,Observer,EaselPlugin);
   return (
     <div className="App" >
+      <Analytics/>
       <Navbar />
       <div style={{marginTop:"10px",zIndex:"5"}}>
       <MainAnimation/>
