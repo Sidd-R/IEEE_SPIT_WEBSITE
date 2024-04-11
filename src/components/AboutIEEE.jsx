@@ -1,5 +1,5 @@
 import React from 'react';
-import { Reveal, Tween } from 'react-gsap';
+// import { Reveal, Tween } from 'react-gsap';
 
 const CardAContent = [
   {

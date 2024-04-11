@@ -6,18 +6,18 @@ import { Home } from "./Pages/Home";
 import { Team } from "./Pages/Team";
 import './styles/App.css'
 import MainAnimation from "./components/MainAnimation";
-import { gsap } from "gsap";
+// import { gsap } from "gsap";
     
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Observer } from "gsap/Observer";
-import { EaselPlugin } from "gsap/EaselPlugin";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import { Observer } from "gsap/Observer";
+// import { EaselPlugin } from "gsap/EaselPlugin";
 
 
 
 
 
 function App() {
-  gsap.registerPlugin(ScrollTrigger,Observer,EaselPlugin);
+  // gsap.registerPlugin(ScrollTrigger,Observer,EaselPlugin);
   return (
     <div className="App" >
       <Navbar />
